@@ -18,10 +18,8 @@ int main()
     stdio_init_all();
 
     while (true) {
-
         blink_morse("SOS");
         printf("SOS!\n");
-        sleep_ms(WORD_GAP);
     }
 }
 
@@ -48,6 +46,7 @@ void blink_morse(char *word) {
                 printf("Invalid character: %c\n", word[i]);
         }
     }
+    sleep_ms(WORD_GAP);
 }
 
 void dot() {
